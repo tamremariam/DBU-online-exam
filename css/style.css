@@ -2,6 +2,7 @@
 * {
     margin: 0;
     padding: 0;
+
     box-sizing: border-box;
 }
 
@@ -11,17 +12,38 @@ body {
     text-transform: capitalize;
     text-decoration: none;
     margin: 0;
+    
 }
 
 /* Header styles */
+.topheder{
+    width: 100%;
+    height: 200px;
+    background: #ffffff;    
+}
+.logos{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    height: 50px;
+    width: 80;
+    margin-left: 200px;
+}
+.moto{
+    margin-top: 25px;
+    margin-bottom: 100px;
+    height: 50px;
+    width: 80;
+    margin-right: 200px;
+}
 header {
+    margin-top: 100px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 100px;
     background: #4DC4D9;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -29,20 +51,21 @@ header {
 }
 
 header .navbar ul {
+    margin-left: 200px;
     list-style: none;
     display: flex;
     align-items: center;
 }
 
 header .navbar ul li {
-    margin-right: 20px;
+    margin-right: 0px;
 }
 
 header .navbar ul li a {
     font-size: 20px;
     padding: 20px;
     color: #333;
-    display: block;
+    
 }
 
 header .navbar ul li a:hover {
@@ -61,15 +84,74 @@ header label {
     cursor: pointer;
     display: none;
 }
+/* Search styles */
+.search-container {
+    display: flex;
+    
+    align-items: center;
+    position: relative; /* To position the search icon */
+}
 
-.quotes{
-    width: 400px;
-    height: 400px;
-    background-color: #4DC4D9;
+.search-container input[type="text"] {
+    background-color: #297fb95b;
+    padding: 8px;
+    border: none;
+    border-radius: 15px;
+    border-color: #ffffff;
+    padding-right: 30px; /* Create space for the search icon */
+}
 
+.search-button {
+    position: absolute;
+    right: 5px;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin-right: 200px;
+}
+/* sign in and shin up */
+
+.sign {
+    margin-left: 30px;
+    right: 5px;
+    background-color: #2980B9;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    cursor: pointer;
 }
 
 
+/*------------home page----------*/
+.quotes{
+    margin-top: 200px;
+    width: 50%;
+    height: 400px;
+    background-color: #4DC4D9;
+    float:left;
+
+}
+.mainquote{
+    font-size: 25;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center
+    ;
+}
+.examimage{
+    margin-top: 100px;
+    width: 50%;
+    height: 500px;
+    float: right;
+    background-image: url(../images/inexam.jpg);
+}
+#futures{
+    width: 100%;
+    height: 5px;
+}
 
 
 
@@ -93,6 +175,22 @@ header label {
 
 /* Media query for smaller screens */
 @media (max-width: 991px) {
+    
+    .logos{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        height: 50px;
+        width: 80;
+        margin-left: 0px;
+    }
+    .moto{
+        margin-top: 25px;
+        margin-bottom: 100px;
+        height: 50px;
+        width: 80;
+        margin-right: 0px;
+    }
+
     header {
         padding: 10px;
     }
@@ -112,26 +210,95 @@ header label {
         flex-direction: column; /* Stack items vertically */
         align-items: center;
     }
-
+    header .navbar ul{
+        width: 100%;
+    }
     #menubar:checked ~ .navbar {
         display: flex; /* Display the navigation when checkbox is checked */
     }
-    header .navbar ul li{
-        width: 100%;
+    
+    /* Search styles for smaller screens */
+    .search-container {
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: flex-end;
     }
-}
-#colors{
-    heder
-    background: #4DC4D9;
-    footer
-    color: #021D3A;
-    heder font
-    color:#002752;
-    corprignt
-    ©
+
+    .search-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .search-button {
+        align-self: flex-end;
+        position: static; /* Reset the position for smaller screens */
+        margin-top: 10px; /* Add spacing between input and button */
+    }
+    /* sign in and shin up */
+
+    .sign {
+        margin-left: auto;
+        right: 5px;
+        background-color: #2980B9;
+        color: white;
+        border:#333
+        border-radius: 15px;
+        padding: 8px 15px;
+        cursor: pointer;
+    }
+    
     
 
-}
-uselesscrap{
+
+    /*------------home page----------*/
+    .quotes{
+        width: 100%;
+        padding-top: 10px;
+    }
+    .examimage{
+        margin-top: 0px;
+        width: 100%;
+        height: 500px;
+        float: right;
+        background-image: url(../images/inexam.jpg);
+    }
     
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#colors{
+    /*heder*/
+    background: #4DC4D9;
+    /*footer*/
+    color: #021D3A;
+    /*heder font*/
+    color:#002752;
+   /* corprignt
+    ©*/
+    
+
 }
