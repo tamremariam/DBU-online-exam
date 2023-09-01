@@ -8,10 +8,10 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="topheder">
-        <img src="images/dbuicon.png"alt="Logo" class="logos" style="float: left; ">
-        <h1 class="webname">DBU online exam</h1>
-        <img src="images/motto.png" alt="moto" class="moto" style="float: right; ">
+    <div class="topheader">
+        <img src="images/dbuicon.png" alt="Logo" class="logos">
+        <h1 class="webname" >DBU online exam</h1>
+        <img src="images/motto.png" alt="moto" class="moto">
     </div>
     <header>
         
@@ -35,7 +35,13 @@
             <button class="search-button">search</button>
         </div>
     </header>
-
+    <main>
+        <main>
+            <!-- Embed home.html inside an iframe -->
+            <iframe src="home.html" width="100%" height="2000px" frameborder="0"></iframe>
+        </main>
+        
+    </main>
     <footer>
         <div class="topfooter">
 
@@ -44,6 +50,23 @@
 
         </div>
     </footer>
+    <script>
+        // Get the iframe element
+        const iframe = document.getElementById("home-iframe");
 
+        // Function to set the iframe height based on its content
+        function setIframeHeight() {
+            const iframeDocument = iframe.contentDocument || iframe.contentWindow.document;
+            const iframeContentHeight = Math.max(
+                iframeDocument.body.scrollHeight,
+                iframeDocument.documentElement.scrollHeight
+            );
+            iframe.style.height = `${iframeContentHeight}px`;
+        }
+
+        // Call the function when the iframe loads and when the window resizes
+        iframe.onload = setIframeHeight;
+        window.addEventListener("resize", setIframeHeight);
+    </script>
 </body>
 </html>

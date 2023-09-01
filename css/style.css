@@ -19,21 +19,24 @@ body {
 .topheder{
     width: 100%;
     height: 200px;
-    background: #ffffff;    
+    background: #ffffff; 
+
 }
-.logos{
+.logos {
     margin-top: 25px;
-    margin-bottom: 100px;
+    margin-bottom: 20px; /* Reduced margin for smaller screens */
     height: 50px;
-    width: 80;
+    width: 80px; /* Added 'px' for width */
     margin-left: 200px;
+    float: left;
 }
-.moto{
-    margin-top: 25px;
-    margin-bottom: 100px;
+
+.moto {
+    margin-top: 20px;
     height: 50px;
-    width: 80;
+    width: 300px; /* Added 'px' for width */
     margin-right: 200px;
+    float: right;
 }
 header {
     margin-top: 100px;
@@ -42,13 +45,53 @@ header {
     left: 0;
     right: 0;
     height: 100px;
-    background: #4DC4D9;
+    background: #4dc4d936;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 1000;
 }
+/* Your existing CSS styles */
+
+/* Add the following CSS for the fixed topheader */
+.topheader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px; /* Adjust the height as needed */
+    background-color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add some padding to the sides */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.topheader .logo-container {
+    display: flex; /* Use flexbox to align logo and webname horizontally */
+    align-items: center; /* Center vertically within the topheader */
+}
+
+.topheader .logos {
+    height: 50px;
+    width: 80px;
+    
+}
+
+.topheader .webname {
+    float: left;
+    font-size: 24px; /* Adjust the font size as needed */
+    color: #333; /* Adjust the color as needed */
+}
+
+/* Adjust the styles for the moto */
+.topheader .moto {
+    height: 50px;
+    width: 300px;
+}
+
 
 header .navbar ul {
     margin-left: 200px;
@@ -115,14 +158,19 @@ header label {
 /* sign in and shin up */
 
 .sign {
-    margin-left: 30px;
-    right: 5px;
-    background-color: #2980B9;
-    color: white;
-    border: none;
-    border-radius: 15px;
-    padding: 8px 15px;
-    cursor: pointer;
+    width: 121px;
+    height: 31px;
+    flex-shrink: 0;
+    border-radius: 50px;
+    border: 4px solid #FFF;
+    background: #2980B9;
+    color: #021D3A;
+font-family: Jomhuria;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    
 }
 
 
@@ -141,12 +189,13 @@ header label {
     text-align: center
     ;
 }
-.examimage{
+.examimage {
     margin-top: 100px;
     width: 50%;
     height: 500px;
     float: right;
     background-image: url(../images/inexam.jpg);
+    background-size: cover; /* Set background image to cover the container */
 }
 #futures{
     width: 100%;
@@ -176,19 +225,17 @@ header label {
 /* Media query for smaller screens */
 @media (max-width: 991px) {
     
-    .logos{
-        margin-top: 25px;
-        margin-bottom: 100px;
-        height: 50px;
-        width: 80;
-        margin-left: 0px;
+    .moto {
+        margin-top: 10px; /* Adjusted top margin for smaller screens */
+        margin-bottom: 10px; /* Adjusted bottom margin for smaller screens */
+        width: 100%; /* Make the width 100% to fit smaller screens */
+        height: auto; /* Allow the height to adjust proportionally */
+        margin-left: 0;
+        margin-right: 0;
     }
-    .moto{
-        margin-top: 25px;
-        margin-bottom: 100px;
-        height: 50px;
-        width: 80;
-        margin-right: 0px;
+    
+    .logos {
+        margin-bottom: 5px; /* Further reduced margin for smaller screens if needed */
     }
 
     header {
