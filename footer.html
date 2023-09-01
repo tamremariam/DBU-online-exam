@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Footer</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
+
+    .content {
+      min-height: 100%;
+      position: relative;
+    }
+
+    footer {
+      background-color: #0b5ccdc1;
+      padding: 20px;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .container {
+      max-width: 2000px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .small-container {
+      max-width: 2000px;
+      max-height: 800px;
+      margin: 0 auto;
+      text-align: flex;
+      font-size: 12px;
+      background-color: rgba(8, 8, 110, 0.963);
+      color: #ffffff;
+      
+    }
+    
+    .social-media {
+      display: flex;
+      /*justify-content: center;*/
+      margin-top: 10px;
+      align-items: right;
+
+    }
+
+    .social-icon {
+      color: #fff;
+      font-size: 20px;
+      margin: 0 5px;
+      text-decoration: none;
+    }
+
+    .social-icon:hover {
+      color: #ccc;
+    }
+
+    .Support-site{
+      color: #fff;
+      text-align: right;
+    }
+
+    .contact-info {
+      color:white;
+      text-align: left;
+
+
+    }
+
+    @media (max-width: 767px) {
+      /* Styles for small screens */
+      .container {
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <div class="content">
+    <!-- Your page content goes here -->
+  </div>
+
+  <footer>
+    <div class="container">
+      
+      <div class="contact-info">
+        <img src="DBU.jpg" align="bottom" width="30“ height="10">
+        <address>
+          <p><img src="images/home.png" align="bottom" width="20“ height="10"> Communication Affairs Director</p>
+          <p> <img src="images/call.png" align="bottom" width="20“ height="10"> +251118120797</p>
+           <p> <img src="images/email.png" align="bottom" width="20“ height="10"> amybdu@gmail.com </p>
+        </address>
+        
+      </div>
+      <div class="Support-site">
+        <P style="size: 12px ;"><h3>support-site</h3></P>
+        <address>
+          <p></p>
+        <p><img src="images/call.png" align="bottom" width="20“ height="10"> +251953997367 / +25165905097</p>
+        <p><img src="images/email.png" align="bottom" width="20“ height="10"> yostiena361@gmail.com / ethioteamremariyam@gmail.com</p>
+      </address>
+      </div>
+    </div>
+    <div class="small-container">
+      <p style="align-items: left;" >&copy; 2023 DBU intern</p>
+    
+    <div class="social-media">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+  </footer>
+</body>
+</html>
