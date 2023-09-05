@@ -213,7 +213,113 @@ header label {
     background-size: cover; /* Set background image to cover the container */
 
 }
+/* ------------------------    reasonwhy   --------------- */
+.background-container {
+    width: 100%;
+    height: 417px;
+    background-image: url(../images/dbu-img-1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .container-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .reason-container {
+    width: 300px;
+    height: 250px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    text-align: center;
+    border-radius: 20px;
+    background-color: white;
+  }
+
+  .reason-container:hover {
+    transform: scale(1.1);
+  }
+
+  .reason-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .reason-container p {
+    font-size: 16px;
+  }
+
+
+/* -----------  footer -------------------- */
+.content {
+    position: relative;
+    min-height: 100%;
+    position: relative;
+  }
+
+  footer {
+    background-color: #0b5ccdc1;
+  
+    text-align: center;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .footer-container {
+    max-width: 2000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .small-container {
+    max-width: 2000px;
+    max-height: 800px;
+    margin: 0 auto;
+    text-align: flex;
+    font-size: 12px;
+    background-color: rgba(8, 8, 110, 0.963);
+    color: #ffffff;
+    
+  }
+  
+  .social-media {
+    display: flex;
+    /*justify-content: center;*/
+    margin-top: 10px;
+    align-items: right;
+
+  }
+
+  .social-icon {
+    color: #fff;
+    font-size: 20px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+
+  .social-icon:hover {
+    color: #ccc;
+  }
+
+  .Support-site{
+    color: #fff;
+    text-align: right;
+  }
+
+  .contact-info {
+    color:white;
+    text-align: left;
+
+
+  }
 
 
 
@@ -306,7 +412,11 @@ header label {
         float: right;
         background-image: url(../images/inexam.jpg);
     }
-    
+    /* Styles for small screens */
+    .container {
+        flex-wrap: wrap;
+        padding: 0 20px;
+      }
 }
 
 

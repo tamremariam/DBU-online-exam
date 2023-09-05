@@ -18,6 +18,45 @@
                 <!-- Add content or image for the "students in exam" section -->
             </div>
        </div>
-    </section>    
+       <div class="reasonswhy">
+        <div class="background-container">
+            <div class="container-wrapper">
+              <div class="reason-container">
+                <img src="images/graphic.png" align="bottom" width="155" height="95">
+                <h2>EVERYTHING YOU NEED</h2>
+                <p><b>Create comprehensive exmas<br>with powerfull tools that are<br>easy to use and quick to apply</b></p>
+              </div>
+        
+              <div class="reason-container">
+                <img src="images/click.png" align="bottom" width="155" height="95">
+                <h2>MAKE IT SIMPLE </h2>
+                <p><b>Conduct exams with confidence and control <br>   thanks to our intutive software that </br>
+                        simplifies technical complexity.</b></p>
+              </div>    
+              <div class="reason-container">
+                <img src="images/mortarboard.png" align="bottom" width="155" height="95">
+                <h2>EMPOWER EVERY STUDENT</h2>
+                <p><b>Customize exams to empowe <br>each student's individual needs</br>      and let their knowledge <br>
+                             shine.</b></p>
+              </div>
+            </div>
+          </div>
+       </div>
+    </section>
+    <script>
+        const reasoncontainers = document.querySelectorAll('.reason-container');
+    
+        reason-containers.forEach(reasoncontainer => {
+          reasoncontainer.addEventListener('mouseover', () => {
+            reasoncontainer.style.backgroundColor = '#8ad0efa0';
+            reasoncontainer.style.color = 'blue';
+          });
+    
+          reasoncontainer.addEventListener('mouseout', () => {
+            reasoncontainer.style.backgroundColor = 'white';
+            reasoncontainer.style.color = 'rgba(8, 8, 110, 0.963)';
+          });
+        });
+      </script>
 </body>
 </html>
