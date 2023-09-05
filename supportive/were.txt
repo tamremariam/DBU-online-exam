@@ -1,0 +1,79 @@
+how it works
+----------------------------------------
+Everything you need
+We respect that you’re the expert when it comes to what’s best for your students (because we’re teachers, too). 
+
+With powerful tools that are easy to use and quick to apply, DBU Exam gives you everything you need to create comprehensive exams.
+
+Cheat Prevention With DBU Exam you can choose from multiple levels of security from open book (no security) to a fully-locked down device. The security 
+measures will help you get an accurate assessment of each student’s knowledge. Exam security is integrated into our software, so you can conduct 
+academically honest exams without having to manage and integrate with third party plug ins.
+
+
+ Auto-Mark : Save time and energy when you set up an exam for auto-mark. Let Exam.net do the scoring for you.Create your exam with various question types, 
+from multiple choice to fill-the-gaps. You can choose which questions are automatically scored and which need to be graded by you. Put down your red pen and 
+put your newfound time toward the next task at hand.
+
+ 
+Make it simple
+Conducting exams online takes coordination. We simplify all the moving pieces so you can administer 
+
+your exams without being overwhelmed by technical complexity. Create and conduct your first exam in as little as an hour, by just uploading a PDF of an 
+existing exam. 
+Upload existing PDF exams : Take the PDF of a pre-existing exam you want to use, upload it to Exam.net, and get it live to your students in less than an 
+hour. It’s that easy. While you can enter each exam question individually or paste questions from Microsoft Word, we know that sometimes all you need is to 
+use materials you already have.
+
+Works across devices : Exam.net works consistently across most devices, including Chromebooks, Macs, iPads, iPhones, Windows machines, and more.
+All tools in the exam window : With all tools and resources accessible in the student’s exam window, students can focus on their exams with limited 
+distractions and increased
+-------------------------------------------------------------------------------------------------
+About the Online Examination Web Application
+Welcome to the official "Online Examination Web Application" developed for Debre Birhan University. Our application aims to revolutionize the 
+way examinations are conducted, making the process more efficient, accessible, and secure for both students and faculty members.
+
+
+Mission and Vision
+Mission: Our mission is to provide a cutting-edge online examination platform that empowers educators and enables students to excel in 
+their academic pursuits.
+
+
+Vision: We envision a future where traditional examination hurdles are minimized, and learning can thrive in a technology-enhanced 
+environment.
+
+Objectives
+Efficiency: To streamline the examination process, reducing administrative burdens and saving valuable time.
+
+Accessibility: To offer students the flexibility to take exams remotely, promoting inclusivity and accessibility.
+
+Security: To ensure the integrity of exams through robust security measures, preventing cheating and unauthorized access.
+
+Data Insights:To provide educators with valuable insights into exam performance and trends for continuous improvement.
+
+Features
+Exam Creation: Create diverse types of exams, from multiple-choice to essay-based, tailored to the subject's requirements.
+
+User Roles: Distinct roles for students, instructors, and administrators, each with specific privileges.
+
+Secure Authentication: Rigorous authentication protocols to ensure only authorized users access the platform.
+
+Real-time Grading: Instant grading for certain question types, providing prompt feedback to students.
+
+Comprehensive Analytics: In-depth exam analytics for educators to gauge student performance and identify areas of improvement.
+
+The Development Team
+Our dedicated team of developers, designers, and educators have collaborated to bring this application to life. We combine technical 
+expertise with a deep understanding of educational needs to create a platform that aligns with Debre Birhan University's commitment to 
+excellence.
+
+Acknowledgments
+We extend our gratitude to the ICT Directorate for providing us with the opportunity to work on this project during our internship. 
+Their guidance and support have been invaluable in shaping this application.
+
+Future Enhancements
+We are committed to continuous improvement. In the future, we plan to expand our features to include even more innovative tools 
+to enhance the teaching and learning experience.
+
+Privacy and Security
+Rest assured, we prioritize the privacy and security of your data. Stringent measures are in place to protect user information 
+and maintain the confidentiality of exams.
