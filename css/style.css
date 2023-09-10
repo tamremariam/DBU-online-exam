@@ -109,10 +109,17 @@ header label {
     display: none;
 }
 /* Search styles */
+.heder-buttons{
+   
+    float: right;
+    width: 700px;
+    position: relative;
+}
 .search-container {
+    width: 300px;
     position: relative;
     display: flex;
-    
+    float: right;
     background-color: #297fb95b;
     padding: 10px;
     border: 5px;
@@ -158,6 +165,7 @@ header label {
 /* sign in and shin up */
 
 .sign {
+    float: left;
     width: 121px;
     height: 31px;
     flex-shrink: 0;
