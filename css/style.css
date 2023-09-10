@@ -284,9 +284,11 @@ header label {
     max-height: 800px;
     margin: 0 auto;
     text-align: flex;
-    font-size: 12px;
     background-color: rgba(8, 8, 110, 0.963);
-    color: #ffffff;
+    color: white; font-size: 14px;
+    font-family: Inter;
+    font-weight: 400;
+    word-wrap: break-word;
     
   }
   
@@ -319,6 +321,28 @@ header label {
     text-align: left;
 
 
+  }
+
+
+  /* ------------------------  about page  ----------------------- */
+  .abouttitle{
+    margin-top: 50px;
+    margin-left: 167px;
+    color: #021D3A;
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 30px;
+    word-wrap: break-word
+  }
+  .aboutcontaint{
+    margin-left: 167px;
+    color: #002752;
+    font-size: 20px;
+    font-family: Inter;
+    font-weight: 400;
+    line-height: 22px;
+    word-wrap: break-word;
   }
 
 
