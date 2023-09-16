@@ -57,6 +57,20 @@
             reasoncontainer.style.color = 'rgba(8, 8, 110, 0.963)';
           });
         });
+        
+        //-----------------------------------------------------
+         // Function to send the iframe content height to the parent window
+         function sendHeightToParent() {
+            const body = document.body;
+            const height = Math.max(body.scrollHeight, body.offsetHeight);
+            parent.postMessage({ iframeHeight: height }, "*");
+        }
+
+        // Detect changes in content and send the height to the parent
+        window.addEventListener('load', sendHeightToParent);
+        window.addEventListener('resize', sendHeightToParent);
+        //--------------------------------------------
+    
       </script>
 </body>
 </html>

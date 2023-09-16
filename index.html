@@ -19,13 +19,12 @@
         <label for="menubar">Menu</label>
         
         <nav class="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">about</a></li>
-                
-            </ul>
-        </nav>
+          <ul>
+              <li><a href="#" id="home-link">Home</a></li>
+              <li><a href="#" id="how-it-works-link">How it works</a></li>
+              <li><a href="#" id="about-link">About</a></li>
+          </ul>
+      </nav>
         <div class="heder-buttons">
           <div>
               <button class="sign">Sign up</button>
@@ -42,29 +41,34 @@
     </header>
     <main>
         <!-- Embed home.html inside an iframe -->
-        <iframe src="home.html" width="100%" height="1000px" frameborder="0" ></iframe>
+        <iframe id="embeddedFrame" src="index/Home.html" width="100%" height="1000px" frameborder="0" frameborder="0"></iframe>
     </main>
     <footer>
         <!-- <div class="footer-container"> -->
           
-          <div class="contact-info">
-            <img src="images/dbuicon.png" align="bottom" width="30“ height="10">
-            <address>
-              <p><img src="images/home.png" align="bottom" width="20“ height="10"> Communication Affairs Director</p>
-              <p> <img src="images/call.png" align="bottom" width="20“ height="10"> +251118120797</p>
-               <p> <img src="images/email.png" align="bottom" width="20“ height="10"> amybdu@gmail.com </p>
-            </address>
-            
+          <div class="fot-content">
+            <div class="contact-info">
+              <img src="images/dbuicon.png" align="bottom" width="30“ height="10">
+              <address>
+                <p><img src="images/home.png" align="bottom" width="20“ height="10"> Communication Affairs Director</p>
+                <p> <img src="images/call.png" align="bottom" width="20“ height="10"> +251118120797</p>
+                 <p> <img src="images/email.png" align="bottom" width="20“ height="10"> amybdu@gmail.com </p>
+              </address>
+            </div>
+  
+            <div class="Support-site">
+              <P style="size: 12px ;"><h3>support-site</h3></P>
+              <address>
+                <p></p>
+              <p><img src="images/call.png" align="bottom" width="20“ height="10"> +251953997367 / +25165905097</p>
+              <p><img src="images/email.png" align="bottom" width="20“ height="10"> yostiena361@gmail.com / ethioteamremariyam@gmail.com</p>
+              </address>
+            </div>
           </div>
-          <div class="Support-site">
-            <P style="size: 12px ;"><h3>support-site</h3></P>
-            <address>
-              <p></p>
-            <p><img src="images/call.png" align="bottom" width="20“ height="10"> +251953997367 / +25165905097</p>
-            <p><img src="images/email.png" align="bottom" width="20“ height="10"> yostiena361@gmail.com / ethioteamremariyam@gmail.com</p>
-          </address>
-          </div>
-        </div>
+
+
+
+
         <div class="small-container">
           <p>&copy; 2023 DBU intern</p>
         
@@ -75,5 +79,50 @@
           </div>
       </div>
       </footer>
+      <script>
+        // Get a reference to the header element
+        const header = document.querySelector('header');
+
+        // -------------     header ----------------------------
+        // Function to handle scroll events
+        function handleScroll() {
+            if (window.scrollY > 0) {
+                // User has scrolled, apply the scrolled-header class
+                header.classList.add('scrolled-header');
+            } else {
+                // User has scrolled back to the top, remove the class
+                header.classList.remove('scrolled-header');
+            }
+        }
+
+        // Add a scroll event listener
+        window.addEventListener('scroll', handleScroll);
+
+        // ---------------------   heder boton linner ----------------
+         // Get references to the iframe and navigation links
+      const iframe = document.getElementById("embeddedFrame");
+      const homeLink = document.getElementById("home-link");
+      const howItWorksLink = document.getElementById("how-it-works-link");
+      const aboutLink = document.getElementById("about-link");
+
+      // Function to set the iframe's src based on the link clicked
+      function changeIframeSrc(linkId, newSrc) {
+          const clickedLink = document.getElementById(linkId);
+          clickedLink.addEventListener("click", function (event) {
+              event.preventDefault(); // Prevent the default link behavior
+              iframe.src = newSrc; // Update the iframe's src
+          });
+      }
+
+      // Call the function for each link
+      changeIframeSrc("home-link", "index/Home.html");
+      changeIframeSrc("how-it-works-link", "index/howitwork.html");
+      changeIframeSrc("about-link", "index/about.html");
+
+      // ---------------------------------------------------------------------
+      
+
+
+    </script>
 </body>
 </html>

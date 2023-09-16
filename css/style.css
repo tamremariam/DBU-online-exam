@@ -39,7 +39,6 @@ body {
 .topheader .logos {
     height: 79px;
     width: 126px;
-    
 }
 
 .topheader .webname {
@@ -72,7 +71,10 @@ header {
     justify-content: space-between;
     z-index: 1000;
 }
-
+.scrolled-header {
+    background-color: #4DC4D9; /* Change this to your desired scrolled background color */
+    transition: background-color 0.3s ease; /* Add a smooth transition effect */
+}
 /* Your existing CSS styles */
 header .navbar ul {
     margin-left: 200px;
@@ -263,34 +265,46 @@ header label {
 
 
 /* -----------  footer -------------------- */
-.content {
+.fot-content {
     position: relative;
     min-height: 100%;
     position: relative;
   }
 
   footer {
-    background-color: #0b5ccdc1;
-  
-    text-align: center;
+ 
+  }
+  .footer-container {
+   
+
+  }
+  .Support-site{
+    color: #fff;
+    width: 50%;
+    height: 400px;
+    background-color: rgb(103, 122, 119);
     position: relative;
-    left: 0;
-    bottom: 0;
-    width: 100%;
+    float: right;
+
+   
   }
 
-  .footer-container {
-    max-width: 2000px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  .contact-info {
+    float: left;
+    position: relative;
+    color:white;
+    width: 50%;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.293);
   }
+  
 
   .small-container {
-    max-width: 2000px;
-    max-height: 800px;
-    margin: 0 auto;
+
+    
+    position: relative;
+    height: 100px;
+    margin-top: 300px;
     text-align: flex;
     background-color: rgba(8, 8, 110, 0.963);
     color: white; font-size: 14px;
@@ -319,17 +333,7 @@ header label {
     color: #ccc;
   }
 
-  .Support-site{
-    color: #fff;
-    text-align: right;
-  }
-
-  .contact-info {
-    color:white;
-    text-align: left;
-
-
-  }
+  
 
 
   /* ------------------------  about page  ----------------------- */
