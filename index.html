@@ -46,38 +46,45 @@
     <footer>
         <!-- <div class="footer-container"> -->
           
-          <div class="fot-content">
+          <div class="upper-footer">
             <div class="contact-info">
-              <img src="images/dbuicon.png" align="bottom" width="30“ height="10">
+              <img id="footerlogo" src="images/dbuicon.png" style="align"bottom" width="30“ height="10">
               <address>
-                <p><img src="images/home.png" align="bottom" width="20“ height="10"> Communication Affairs Director</p>
-                <p> <img src="images/call.png" align="bottom" width="20“ height="10"> +251118120797</p>
-                 <p> <img src="images/email.png" align="bottom" width="20“ height="10"> amybdu@gmail.com </p>
+                <p><img src="images/home.png" style="align:="bottom" width="20“ height="10""> Communication Affairs Director</p>
+                <p> <img src="images/call.png" style="align="bottom" width="20“ height="10"> +251118120797</p>
+                 <p> <img src="images/email.png" style="align="bottom" width="20“ height="10"> amybdu@gmail.com </p>
               </address>
             </div>
   
             <div class="Support-site">
               <P style="size: 12px ;"><h3>support-site</h3></P>
               <address>
-                <p></p>
-              <p><img src="images/call.png" align="bottom" width="20“ height="10"> +251953997367 / +25165905097</p>
-              <p><img src="images/email.png" align="bottom" width="20“ height="10"> yostiena361@gmail.com / ethioteamremariyam@gmail.com</p>
+              <p><img src="images/call.png" style="align="bottom" width="20“ height="10"> +251953997367 / +25165905097</p>
+              <p><img src="images/email.png" style="align="bottom" width="20“ height="10"> yostiena361@gmail.com / ethioteamremariyam@gmail.com</p>
               </address>
             </div>
           </div>
+          <div class="lower-footer">
+            <div class="lower-footer-text">
+               <p>Copyright © 2023, DBUintern</p>
+               <!-- <img src="images/email.png"> -->
+            </div>
+           
+          
+            <div class="social-media">
+              <img id="social-media-icon" src="images/icon/facebook.png" alt="facebook icon" style="align="bottom" width="20“ height="10">
+              <img id="social-media-icon" src="images/icon/linkedin.png" alt="Linkedin icon" style="align="bottom" width="20“ height="10">
+              <img id="social-media-icon" src="images/icon/twetter.png" alt="Twetter icon" style="align="bottom" width="20“ height="10">
+              <img id="social-media-icon" src="images/icon/linkedin.png" alt="Instagram icon" style="align="bottom" width="20“ height="10">
+            </div>
+        </div>
 
 
 
 
-        <div class="small-container">
-          <p>&copy; 2023 DBU intern</p>
-        
-          <div class="social-media">
-            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
-            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
-          </div>
-      </div>
+
+
+
       </footer>
       <script>
         // Get a reference to the header element
@@ -111,6 +118,8 @@
           clickedLink.addEventListener("click", function (event) {
               event.preventDefault(); // Prevent the default link behavior
               iframe.src = newSrc; // Update the iframe's src
+                // iframe.classList.add(embeddedFrame-home);
+              
           });
       }
 
@@ -120,6 +129,9 @@
       changeIframeSrc("about-link", "index/about.html");
 
       // ---------------------------------------------------------------------
+      function changeiframestyle(){
+
+      }
       
 
 

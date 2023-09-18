@@ -136,6 +136,13 @@ changeIframeSrc("how-it-works-link", "index/howitwork.html");
 changeIframeSrc("about-link", "index/about.html");
 
       // ---------------------------------------------------------------------
+
+      // Include iframeResizer.contentWindow.min.js
+ 
+        iframe.onload = function() {
+            // Initialize the iframeResizer library
+            iFrameResize({ checkOrigin: false });
+        };
     </script>
 </body>
 </html>
